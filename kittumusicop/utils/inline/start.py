@@ -8,10 +8,14 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
+                text=_["✯ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴩ ʙᴀʙy ✯"], url=f"https://t.me/Kittu_music_robot?startgroup=true"
             ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text=_["✯ Owner ✯"], url=config.SUPPORT_CHAT),
         ],
+        [
+            InlineKeyboardButton(
+                text=_["✯ More ✯"], url=f"https://t.me/qts_dp"
+            ),
     ]
     return buttons
 
@@ -20,18 +24,18 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                text=_["✯ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴩ ʙᴀʙy ✯"],
+                url=f"https://t.me/Kittu_music_robot?startgroup=true",
             )
         ],
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text=_["Help"], callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text=_["Owber"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["More"], url=config.SUPPORT_CHAT),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["S_B_7"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["information"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["information"], url=config.SUPPORT_CHANNEL),
         ],
     ]
     return buttons
